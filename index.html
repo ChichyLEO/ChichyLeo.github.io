@@ -62,7 +62,7 @@
   <li  ><a  href="#"><img  class="smaller-image thick-border"  src="http://img.52lishi.com/pic/201306/22/6aa43cca56.png"></a >聽音樂</li>
 </ul>
 </p>
-
+<p>  </p>
 <head>
     <style>
        #map {
@@ -72,13 +72,14 @@
     </style>
   </head>
   <body>
-    <h1>學校位置</h1>
+    
+    <p>學校位置</p>
     <div id="map"></div>
     <script>
       function initMap() {
         var uluru = {lat: 25.032741, lng: 121.434266};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 80,
+          zoom: 50,
           center: uluru
         });
         var marker = new google.maps.Marker({
