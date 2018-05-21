@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/>
+
 
 <script>
   $(document).ready(function() {
@@ -40,6 +42,36 @@
   }
 </style>
 <title>Chichy</title>
+  
+<head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 25.032741, lng: 121.434266};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC45dWGGmjTqIkq97E_a9F8ARi_Zed_St8&callback=initMap">
+    </script>
+  </body>
+
 <h1 style="display: none" >About me</h1>
 <p id="t1">姓名:曾冠偉</p>
 <p id="t2">學校:輔仁大學</p>
